@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Sign-up</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+ 
+    <link rel="stylesheet" href="css/animate.css">     <!-- ------ wow css------->
+
+    <link rel="stylesheet" href="css/all.css">     <!-- ------ font awesome css------->
+
+    <link rel="stylesheet" href="css/venobox.css">     <!-- ------ venobox css------->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">     <!--  ------- bootstrap css --------- -->
+
+    <link rel="stylesheet" href="css/default.css">         <!-- ---------default css-->
+
+    <link rel="stylesheet" href="css/index.css">         <!-- ---------main css-->
+</head>
+
+<body class="body-reg reg-color">
+
+
+
+
+
+
+    <div class="container-rec">
+
+    <a href="./index.html">  <img src="./img/logo.png" style="border-radius: 50%; border: 1px solid black; width: 14%; position: absolute; top: 10px; left: 10px; bottom: 10px;" alt="logo" srcset=""> </a>
+    <br>  <div class="alert">Submitted Successfuly!</div>
+        <section class="registration mt-45" id="registration">
+            <div class="container">
+                <h1 class="text-title mb-30 mt-50 title-frame">Workshop Sign-Up</h1>
+                <form id="workshopForm">
+                  <div class="form-group my-2" style="top: 1000px;">
+                    <label for="formGroupExampleInput">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="FullName" placeholder="Your Full Name" required>
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="formGroupExampleInput2">Email</label>
+                    <input type="email" class="form-control" id="Email" placeholder="j.anderson@nu.edu.eg" required>
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="formGroupExampleInput2">NU ID</label>
+                    <input type="number" class="form-control" id="NuID" placeholder="221000500">
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="formGroupExampleInput2">Phone Number (WhatsApp)</label>
+                    <input type="number" class="form-control" id="PhoneNumber" placeholder="01XXXXXXXX" required>
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="formGroupExampleInput2">School</label>
+                    <input type="text" class="form-control" id="School" placeholder="Business/Egineering/Computer Science" required>
+                  </div>
+
+                  <div class="form-group my-2">
+                    <label for="formGroupExampleInput2">Major</label>
+                    <input type="text" class="form-control" id="Major" placeholder="Marketing/Articial Intelligence/Civil Engineering" required>
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="formGroupExampleInput2">Class Level</label>
+                    <input type="text" class="form-control" id="classLevel" placeholder="Freshman/Sophomore/Juinor/Senior" required>
+                  </div>      
+
+
+                  <div class="form-group my-2">
+                    <label for="formGroupExampleInput2">Do you have a start-up idea? (Optional)</label>
+                    <textarea type="text" class="form-control" id="StartupIdea" cols placeholder=""></textarea>
+                  </div>
+      
+
+                <button class="next-btn mx-auto">
+                  <span class="btn-text">Submit</span>
+                </button>
+
+
+
+
+              </form>
+            </div>
+        </section>
+    
+    
+        
+    </div>
+
+
+  <script src="./scripts/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>                <!-- ---------- firebase js ---------- -->
+
+  <script type="module" src="scripts/firebaseForms.js"></script>                <!-- ---------- main js ---------- -->
+
+</body>
+</html>
