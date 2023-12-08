@@ -1,18 +1,28 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyA9zTNjSj2iHn_O5uLhgHvV6b-O3Kx0Y6w",
-  authDomain: "forms-eclub.firebaseapp.com",
-  databaseURL: "https://forms-eclub-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "forms-eclub",
-  storageBucket: "forms-eclub.appspot.com",
-  messagingSenderId: "202554628434",
-  appId: "1:202554628434:web:f0fdb5f416ccf25aaf428b",
-  measurementId: "G-LQKJTBK12C"};
 
-// initialize firebase
-firebase.initializeApp(firebaseConfig);
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD35Hr5-5ZzJ8nMIS1zffa2y3LJ28UDjt8",
+    authDomain: "nexttrial-281a0.firebaseapp.com",
+    databaseURL: "https://nexttrial-281a0-default-rtdb.firebaseio.com",
+    projectId: "nexttrial-281a0",
+    storageBucket: "nexttrial-281a0.appspot.com",
+    messagingSenderId: "335724435184",
+    appId: "1:335724435184:web:44837cc0196f73fef71435",
+    measurementId: "G-0JDPMT55Y0"
+  };
+
+  // Initialize Firebase
+  const App = initializeApp(firebaseConfig);
+  const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 // reference database
-var newWorkshopForm = firebase.database().ref("Forms-eclub");
+var work = firebase.database().ref("nexttrail");
 
 document.getElementById("workshopForm").addEventListener("submit", submitForm);
 
@@ -27,6 +37,8 @@ function submitForm(e) {
   var School = getElementVal("School");
   var classLevel = getElementVal("classLevel");
   var Idea = getElementVal("StartupIdea");
+  console.log(Name, Email, NuID);
+
 
 
   saveMessages(Name, Email, NuID, Major, PhoneNumber, School, classLevel, Idea);
@@ -44,7 +56,7 @@ function submitForm(e) {
 }
 
 const saveMessages = (Name, Email, NuID, Major, PhoneNumber, School, classLevel, Idea) => {
-  var workshopForm = newWorkshopForm.push();
+  var workshopForm = work.push();
 
   workshopForm.set({
     name: Name,
