@@ -1,0 +1,109 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: rgb(var(--bs-tertiary-color-rgb));
+  }
+
+
+.carousel {
+margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+bottom: 3rem;
+z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+height: 32rem;
+}
+
+.featurette-heading {
+    letter-spacing: -.05rem;
+  }
+  
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+
+
+
+  .btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+  }
+
+
+
+.featurette .col-md-7{
+    margin-top: 100px;
+}
+
+.container.aboutus .row.featurette {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+  }
+  
+  .container.aboutus .row.featurette .col-md-7,
+  .container.aboutus .row.featurette .col-md-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .container.aboutus .row.featurette .col-md-5 {
+    align-items: center; /* Vertically center align content */
+  }
+
+.featurette-divider {
+margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+
+.featurette-heading {
+letter-spacing: -.05rem;
+}
+
+.aboutus .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  /* rtl:begin:ignore */
+  .aboutus .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+  .pt-50{
+    padding-bottom: 50px;
+
+}
+
+.p.blue{
+    color: hsl(260, 72%, 50%);
+
+}

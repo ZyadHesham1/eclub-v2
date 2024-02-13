@@ -3,65 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <title>Coming Soon</title>
-  <!-- <link rel="stylesheet" href="styles.css"> -->
-    <style>
-        body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f3f3f3;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>NU E-Club</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
-.coming-soon-container {
-  text-align: center;
-}
+  <link rel="stylesheet" href="css/bootstrap.min.css">     <!--  ------- bootstrap css --------- -->
 
-h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
 
-#countdown {
-  font-size: 2em;
-  margin-top: 20px;
-}
+  <link rel="stylesheet" href="css/animate.css">     <!-- ------ wow css------->
 
-    </style>
+  <link rel="stylesheet" href="css/all.css">     <!-- ------ font awesome css------->
+
+  <link rel="stylesheet" href="css/venobox.css">     <!-- ------ venobox css------->
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">     <!--  ------- bootstrap css --------- -->
+
+  <link rel="stylesheet" href="css/default.css">         <!-- ---------default css-->
+
+  <link rel="stylesheet" href="css/index.css">         <!-- ---------main css-->
+
+  <link rel="stylesheet" href="css/aboutus.css">
+
+  <link rel="stylesheet" href="season3.html">
+
 </head>
+
 <body>
-  <div class="coming-soon-container">
-    <h1>Under Construction!</h1>
-    <p>We're working hard. Stay tuned for updates.</p>
-    <div id="countdown"></div>
-  </div>
 
-  <script>
+  <header class="header-area">
+    <!-- ------- navbar start --------  -->
+  <div class="navbar-area">    
+       <div class="container">
+           <nav class="navbar navbar-expand-lg bg-body-light">
+               <div class="container-fluid">
+                 <a class="navbar-brand" href="#">
+                   <img class="logo" src="img/logo-transparent.png"  alt="NU E-Club Logo" >
+                 </a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav ms-auto ">
 
-const countdownDate = new Date('December 31, 2023 23:59:59').getTime();
+                     <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                     </li>
+
+                     <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="season3.html">Events</a>
+                     </li>
+
+                     <li class="nav-item dropdown">
+                       <a class="nav-link" href="aboutus.html">About Us</a>                            
+                       <ul class="dropdown-menu">
+                         <li><a class="dropdown-item" href="#">What's E-Club</a></li>
+                         <li><a class="dropdown-item" href="#">Our Mission</a></li>
+                         <li><a class="dropdown-item" href="#">Our Vision</a></li>
+                         <li><a class="dropdown-item" href="#">Our Partners</a></li>
+                         <li><hr class="dropdown-divider"></li>
+                         <li><a class="dropdown-item" href="#">Our Team</a></li>
+                       </ul>
+                     </li>
+
+                     <!-- <li class="nav-item dropdown ">
+                       <a  href="seasons.html" class="nav-link dropdown">Seasons</a>                            
+                       <ul class="dropdown-menu">
+                         <li><a class="dropdown-item" href="seasons.html">Season 1</a></li>
+                         <li><a class="dropdown-item" href="seasons.html">Season 2</a></li>
+                         <li><hr class="dropdown-divider"></li>
+                         <li><a class="dropdown-item" href="seasons.html">Current Season</a></li>
+                       </ul>
+                     </li> -->
+
+                     <li class="nav-item">
+                       <a class="nav-link" href="recruitment.html">Join Us</a>
+                     </li> 
+                   </ul>
+                 </div>
+               </div>
+             </nav>
+       </div>
+   </div> 
+   <br><br><br><br><br><br>
+  </header>
+
+  <main>
+    <div class="container aboutus">
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">Entrepreneurship Hub</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Empowering Tomorrow's Innovators</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="#team"><button type="button" class="btn btn-primary btn-lg px-4 gap-3">Our team</button></a>
+          </div>
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1 fw-bold">About   NU E-Club</h2>
+          <p class="lead">The NU E-Club, a student-led organization at Nile University in Egypt, fosters entrepreneurship and innovation among students. 
+            It serves as a hub for entrepreneurial activities, aiming to equip students with skills to transform ideas into ventures.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/about-pic.jpg" alt="Placeholder: 500x500 picture" role="img" aria-label="Placeholder: 500x500 picture" preserveAspectRatio="xMidYMid slice">
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1 fw-bold">Our Vision & Mission</h2>
+          <p class="lead">To embrace entrepreneurship among Nile University students, empowering them as future leaders in Egypt's business landscape. 
+            To provide skills, knowledge, and opportunities for students to turn ideas into ventures.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/mission-vision.jpg" alt="Placeholder: 500x500 picture" role="img" aria-label="Placeholder: 500x500 picture" preserveAspectRatio="xMidYMid slice">
+        </div>
+      </div>
+    
+      <hr class="featurette-divider">
+    
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1 fw-bold">Goals & Objectives</h2>
+          <p class="lead">Promote Entrepreneurial Culture: NU E-Club is the hub for entrepreneurial activities at Nile University. 
+            <br><br>Skill Development: Members acquire practical skills for real-world scenarios. 
+            <br><br>Visibility and Recognition: Recognized as a leading entrepreneurship club in Egypt. 
+            Host Regular Workshops: Organize learning opportunities for students. 
+            <br><br>Launch Training Programs: Offer specialized training for committees. 
+            Collaborate on National Events: Participate in national entrepreneurial events. 
+            <br><br>Host Flagship Events: Organize mega events that provide entrepreneurial insights and activities.
+            <br><br>Digital Presence: Enhance online engagement. Competitions: Organize entrepreneurial competitions and provide training for teams.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/goal-pic.jpg" alt="Placeholder: 500x500 picture" role="img" aria-label="Placeholder: 500x500 picture" preserveAspectRatio="xMidYMid slice">
+        </div>
+      </div>
+    
+  
+      <hr class="featurette-divider">
 
 
-const countdown = setInterval(function() {
-  const now = new Date().getTime();
-  const distance = countdownDate - now;
+      <h1 class="display-5 fw-bold text-body-emphasis text-center pt-50" id="team">Our Team</h1>
 
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/YYpfp.jpg" alt="" focusable= "false" width="100%" height="100%">
+          <h2 class="fw-normal">Youssef Yahya</h2>
+          <p>President</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/Toqqapfp.jpg" alt="" focusable= "false" width="100%" height="100%">
+          <h2 class="fw-normal">Toqqa Hossam</h2>
+          <p>Vice President</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
 
-  const countdownDisplay = document.getElementById('countdown');
-  countdownDisplay.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/MApfp.jpg" alt="" focusable= "false" width="100%" height="100%">
+          <h2 class="fw-normal">Mariam Badran</h2>
+          <p>Head of Public Relations</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/Hana.jpg" alt="" focusable= "false" width="100%" height="100%">
+          <h2 class="fw-normal">Hana Hatem</h2>
+          <p>Head of Human Resources</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/KApfp.jpg" alt="" focusable= "false" width="100%" height="100%">
+          <h2 class="fw-normal">Khadija Alaa</h2>
+          <p>Head of Media</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
 
-  if (distance < 0) {
-    clearInterval(countdown);
-    countdownDisplay.innerHTML = 'Our site is live!';
-  }
-}, 1000);
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/Moazpfp.jpg" alt="" focusable= "false" width="100%" height="100%">
+          <h2 class="fw-normal">Moaz Khaleel</h2>
+          <p>Head of Operations</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/monapfp.jpg" alt="" focusable= "false" width="100%" height="100%">
+          <h2 class="fw-normal">Mona Gomaa</h2>
+          <p>Head of Marketing</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
 
-  </script>
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/ZApfp.jpg" alt="" focusable= "false" width="100%" height="100%">
+          <h2 class="fw-normal">Zyad Abdelsalam</h2>
+          <p>Head of Web Development</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+
+    </div>
+  </main>
+
+  <script></script>
 </body>
 </html>
