@@ -10,10 +10,6 @@ $(function () {
     });
 
 });
-var wow = new WOW();
-wow.init();
-
-document.getElementById("registration").style.display = "none";
 
 function revealContent() {
     var x = document.getElementById("registration");

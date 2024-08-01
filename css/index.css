@@ -16,6 +16,9 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+p{
+  font-size: 19px;
+}
 
 
 img {
@@ -165,15 +168,14 @@ a {
   left: -26px;
 }
 
-.image-1{
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
+.image-1 {
+  height: auto;  /* Allow height to adjust automatically */
+  max-width: 100%; /* Ensure the image does not exceed the width of its container */
+  border-radius: 50%; /* Keep the circular shape */
   border-width: 2px;
   border-color: #041e27;
-  border-style:solid;
-  
-  
+  border-style: solid;
+  object-fit: cover; /* Ensure the image covers the container while preserving aspect ratio */
 }
 
 
@@ -202,6 +204,7 @@ a {
 @media only screen and (max-width: 991px) {
 
   .learn-more {
+    max-width: 150px;
     display: flex;
     padding: 0 25px;
     font-size: 16px;
@@ -213,6 +216,7 @@ a {
     background-color: #19a6d4;
     color: white;
     margin: auto;
+    text-align: center;
   }
 }
 
@@ -234,7 +238,7 @@ a {
 /*      home css       */
 
 .header-hero{
-  position: relative;
+  padding-top: 200px;
   top: 300px;
   height: 800px;
   background-position: bottom center;
