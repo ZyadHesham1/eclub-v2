@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="nu eclub season 3">
+    <title>Egnite Agenda</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+
+    <link rel="stylesheet" href="css/default.css">         <!-- ---------default css-->
+
+    <link rel="stylesheet" href="css/index.css">         <!-- ---------main css-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/aboutus.css" rel="stylesheet">
+
+    <link href="css/season3.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,600;0,900;1,200;1,900&display=swap">
+
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.coming-soon-container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+    </style>
+
+  </head>
+
+  <body>
+    <header class="header-area">
+        <!-- ------- navbar start --------  -->
+     <div class="navbar-area">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <img class="logo" src="img/logo-transparent.png"  alt="NU E-Club Logo" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto ">
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="season3.html#latest">E-gnite</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="season3.html">Events</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">What's E-Club</a></li>
+                    <li><a class="dropdown-item" href="#">Our Mission</a></li>
+                    <li><a class="dropdown-item" href="#">Our Vision</a></li>
+                    <li><a class="dropdown-item" href="#">Our Partners</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Our Team</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="recruitment.html">Join Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </nav>
+      </div>
+       </div>
+       <!-- ------- navbar end --------  -->
+       <br><br><br><br>
+   </header>      <!--Header End-->
+
+
+   <div class="coming-soon-container">
+    <h1>Coming Soon</h1>
+    <p>Stay tuned for updates!</p>
+    <div id="countdown"></div>
+
+    <a href="season3.html"><h2>Go Back</h2></a>
+  </div>
+
+  <script>
+
+const countdownDate = new Date('August 24, 2024 15:00:00').getTime();
+
+
+const countdown = setInterval(function() {
+  const now = new Date().getTime();
+  const distance = countdownDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  const countdownDisplay = document.getElementById('countdown');
+  countdownDisplay.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+  if (distance < 0) {
+    clearInterval(countdown);
+    countdownDisplay.innerHTML = 'Our site is live!';
+  }
+}, 1000);
+
+  </script>
+
+  </body>
+
+
+</html>
